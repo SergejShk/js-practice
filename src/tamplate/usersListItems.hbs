@@ -1,0 +1,17 @@
+
+{{#each this}}
+<li class='users__item' data-id={{id}}>
+  <div class='content'>
+    <span class='user__descr'>Name: {{user-name}}</span>
+    <span class='user__descr'>Email: {{user-email}}</span>
+  </div>
+  <div class='users__btns-wrapper'>
+    <button class='users__btn' type='button' data-action='remove'>
+      Edit
+    </button>
+    <button class='users__btn' type='button' data-action='edit'>
+      Remove
+    </button>
+  </div>
+</li>
+{{/each}}
